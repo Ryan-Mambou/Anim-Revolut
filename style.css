@@ -139,7 +139,7 @@ nav .second-nav-div a:last-child {
 .reveal {
   margin: auto;
   z-index: -20;
-  width: 90vw;
+  width: clamp(60%, 1000px, 95%);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -296,5 +296,8 @@ nav .second-nav-div a:last-child {
   }
   #mobile-screen h1 {
     color: black;
+  }
+  .reveal {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ animate.addEventListener('click', (e) => {
     transform: "translateY(-50%)"
   })
   gsap.to('.box', {
-    width: '70vw',
+    width: 'clamp(60%, 1000px, 95%)',
     height: '100vh', 
     scale: 1, 
     borderRadius: '0px', zIndex: 5 })
@@ -94,21 +94,4 @@ scrollToTop.addEventListener('click', (e) => {
   })
 })
 
-// function showMessageForSpecificSize() {
-//   var screenWidth = window.innerWidth;
-  
-//   if (screenWidth <= 1028) { // Change the size condition as per your requirement
-//     var messageContainer = document.getElementById('mobile-screen');
-//     // messageContainer.style.display = 'block';
-//     // messageContainer.style.fontSize = "4rem"
-//     messageContainer.textContent = 'Please Resize Your Screen';
-//   } else {
-//     var messageContainer = document.getElementById('mobile-screen');
-//     messageContainer.style.display = 'none';
-//   }
-// }
-
-// // Call the function on page load and whenever the window is resized
-// window.addEventListener('load', showMessageForSpecificSize);
-// window.addEventListener('resize', showMessageForSpecificSize);
 
