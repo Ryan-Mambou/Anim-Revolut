@@ -152,15 +152,13 @@ nav{
 }
 
 .reveal {
-    // background-color: white;
     // z-index: 50;
     // background-color: green;
     margin: auto;
     z-index: -20;
     // opacity: 0;
     width: 90vw;
-    height: 100vh;
-    // background-color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,19 +195,18 @@ nav{
     align-items: center;
     gap: 0.5rem;
     opacity: 0;
+    transform: translateY(75px) scale(0.75);
     // background-color: blue;
 
     h2{
         font-size: 3.5rem;
         text-align: center;
         width: 90%;
-        background-color: lightblue;
         color: black;
     }
 
     p{
         width: 50%;
-        background-color: blue;
         font-size: 1.1rem;
         text-align: center;
         color: black;
