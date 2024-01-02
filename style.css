@@ -131,7 +131,7 @@ nav .second-nav-div a:last-child {
 .reveal {
   margin: auto;
   z-index: -20;
-  max-width: 80rem;
+  width: 90vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -165,14 +165,18 @@ nav .second-nav-div a:last-child {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  opacity: 0;
 }
 .reveal-text h2 {
   font-size: 3.5rem;
   text-align: center;
+  width: 90%;
+  background-color: lightblue;
   color: black;
 }
 .reveal-text p {
-  width: 60%;
+  width: 50%;
+  background-color: blue;
   font-size: 1.1rem;
   text-align: center;
   color: black;
@@ -191,6 +195,7 @@ nav .second-nav-div a:last-child {
 }
 
 .reveal-slider {
+  display: flex;
   position: absolute;
   background-color: lightblue;
   bottom: 0;
@@ -255,10 +260,14 @@ nav .second-nav-div a:last-child {
   height: 100%;
 }
 .reveal-slider .secondary-one {
-  left: -50%;
-  transform: translateX(0%);
+  left: -4%;
+  transform: translateX(0%) scale(1);
+  opacity: 0;
+  z-index: 15;
 }
 .reveal-slider .secondary-two {
-  right: -50%;
+  right: -4%;
   transform: translateX(0%);
+  z-index: 15;
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

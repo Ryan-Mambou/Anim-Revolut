@@ -153,10 +153,12 @@ nav{
 
 .reveal {
     // background-color: white;
+    // z-index: 50;
+    // background-color: green;
     margin: auto;
     z-index: -20;
     // opacity: 0;
-    max-width: 80rem;
+    width: 90vw;
     height: 100vh;
     // background-color: white;
     display: flex;
@@ -175,8 +177,6 @@ nav{
     width: calc(48vh);
     height: calc(70vh);
     background-color: white;
-    // background-color: transparent;
-    // overflow: hidden;
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -196,16 +196,20 @@ nav{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    // opacity: 0;
+    opacity: 0;
+    // background-color: blue;
 
     h2{
         font-size: 3.5rem;
         text-align: center;
+        width: 90%;
+        background-color: lightblue;
         color: black;
     }
 
     p{
-        width: 60%;
+        width: 50%;
+        background-color: blue;
         font-size: 1.1rem;
         text-align: center;
         color: black;
@@ -228,7 +232,7 @@ nav{
 }
 
 .reveal-slider{
-    // display: flex;
+    display: flex;
     // flex-direction: row;
     position: absolute;
     background-color: lightblue;
@@ -305,13 +309,17 @@ nav{
     }
 
     .secondary-one{
-        left: -50%;
-        transform: translateX(0%);
+        left: -4%;
+        transform: translateX(0%) scale(1.0);
+        opacity: 0;
+        z-index: 15;
     }
 
     .secondary-two{
-        right: -50%;
+        right: -4%;
         transform: translateX(0%);
+        z-index: 15;
+        opacity: 0;
     }
 }
 
