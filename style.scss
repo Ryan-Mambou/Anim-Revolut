@@ -197,7 +197,8 @@ nav{
     // background-color: blue;
 
     h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
+        font-weight: 900;
         text-align: center;
         width: 90%;
         color: black;
@@ -232,7 +233,7 @@ nav{
     position: absolute;
     background-color: lightblue;
     bottom: 0;
-    width: 100%;
+    // width: 100%;
 
     .middle-card{
         // background-image: url('/public/banner.webp');
@@ -306,16 +307,16 @@ nav{
 
     .secondary-one{
         // left: -4%;
-        transform: translateX(10%) scale(1.0);
-        opacity: 1;
-        z-index: 15;
+        transform: translateX(100%) scale(1.0);
+        opacity: 0;
+        // z-index: 15;
     }
 
     .secondary-two{
         right: 0%;
-        transform: translateX(-10%) scale(1.0);
-        z-index: 15;
-        opacity: 1;
+        transform: translateX(-100%) scale(1.0);
+        // z-index: 15;
+        opacity: 0;
     }
 }
 

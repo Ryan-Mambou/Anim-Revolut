@@ -175,7 +175,8 @@ nav .second-nav-div a:last-child {
   transform: translateY(75px) scale(0.75);
 }
 .reveal-text h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: 900;
   text-align: center;
   width: 90%;
   color: black;
@@ -204,7 +205,6 @@ nav .second-nav-div a:last-child {
   position: absolute;
   background-color: lightblue;
   bottom: 0;
-  width: 100%;
 }
 .reveal-slider .middle-card {
   -o-object-fit: cover;
@@ -265,13 +265,11 @@ nav .second-nav-div a:last-child {
   height: 100%;
 }
 .reveal-slider .secondary-one {
-  transform: translateX(10%) scale(1);
-  opacity: 1;
-  z-index: 15;
+  transform: translateX(100%) scale(1);
+  opacity: 0;
 }
 .reveal-slider .secondary-two {
   right: 0%;
-  transform: translateX(-10%) scale(1);
-  z-index: 15;
-  opacity: 1;
+  transform: translateX(-100%) scale(1);
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

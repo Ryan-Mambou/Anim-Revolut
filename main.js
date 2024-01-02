@@ -9,7 +9,7 @@ animate.addEventListener('click', (e) => {
     transform: "translateY(-50%)"
   })
   gsap.to('.box', {
-    width: '90vw',
+    width: '70vw',
     height: '100vh', 
     scale: 1, 
     borderRadius: '0px', zIndex: 5 })
@@ -24,6 +24,9 @@ animate.addEventListener('click', (e) => {
     borderLeft: "none",
     borderRight: "none",
   })
+  gsap.to('.middle-avatar', {
+    transform: "translate(-50%, 120px)"
+  })
   gsap.to('.reveal', {
     opacity: 1,
     zIndex: 10
@@ -34,13 +37,11 @@ animate.addEventListener('click', (e) => {
     zIndex: 10
   })
   gsap.to('.secondary-one', {
-    borderRadius: '1110px',
-    transform: "translateX(10%) scale(0.6)",
+    transform: "translateX(20%) scale(0.65)",
     opacity: 1
   })
   gsap.to('.secondary-two', {
-    borderRadius: '1110px',
-    transform: "translateX(-10%) scale(0.6)",
+    transform: "translateX(-20%) scale(0.65)",
     opacity: 1
   })
 })
@@ -58,7 +59,6 @@ scrollToTop.addEventListener('click', (e) => {
     borderTopRightRadius: "2rem",
     borderTopLeftRadius: "2rem",
     zIndex: -20,
-    clearProps: 'all'
   })
   gsap.to('.reveal', {
     zIndex: -1
@@ -72,7 +72,9 @@ scrollToTop.addEventListener('click', (e) => {
     borderTopRightRadius: '2rem',
     zIndex: 5,
     opacity: 1,
-    clearProps: 'all'
+  })
+  gsap.to('.middle-avatar', {
+    transform: "translate(-50%, 0px)"
   })
   gsap.to('.reveal-text', {
     transform: "translateY(0) scale(0.75)",
@@ -81,16 +83,13 @@ scrollToTop.addEventListener('click', (e) => {
   })
   gsap.to('.reveal-slider', {
     transform: "translateY(0)",
-    // zIndex: -1
   })
   gsap.to('.secondary-one', {
-    borderRadius: '1110px',
-    transform: "translateX(0%) scale(1)",
+    transform: "translateX(100%) scale(1)",
     opacity: 0
   })
   gsap.to('.secondary-two', {
-    borderRadius: '1110px',
-    transform: "translateX(0%) scale(1)",
+    transform: "translateX(-100%) scale(1)",
     opacity: 0
   })
 })
