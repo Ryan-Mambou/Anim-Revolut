@@ -46,12 +46,17 @@ body{
 
 nav{
     display: flex;
-    padding: 1rem 12rem;
+    padding: 1rem 0rem;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    width: clamp(60%, 1000px, 95%);
+    // width: 1000px;
+
 
     .first-nav-div{
         display: flex;
+        align-items: center;
         gap: 2.5rem;
 
         img{
@@ -60,6 +65,7 @@ nav{
 
         ul{
             display: flex;
+            align-items: center;
             list-style: none;
             gap: 1rem;
             cursor: pointer;
@@ -97,9 +103,11 @@ nav{
 
 .banner{
     z-index: 10;
+    margin: auto;
+    width: clamp(60%, 1000px, 95%);
 
     .banner-text{
-        padding: 3rem 12rem;
+        padding: 3rem 0rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;

@@ -4,6 +4,10 @@ let animate = document.querySelector(".animate")
 let scrollToTop = document.querySelector(".scroll-to-top")
 
 animate.addEventListener('click', (e) => {
+  gsap.to('.up', {
+    opacity: 0,
+    transform: "translateY(-50%)"
+  })
   gsap.to('.box', {
     width: '90vw',
     height: '100vh', 
@@ -43,6 +47,10 @@ animate.addEventListener('click', (e) => {
 
 
 scrollToTop.addEventListener('click', (e) => {
+  gsap.to('.up', {
+    opacity: 1,
+    transform: "translateY(0)"
+  })
   gsap.to('.box', {
     width: 'calc(48vh)',
     height: 'calc(70vh)', 
@@ -55,8 +63,6 @@ scrollToTop.addEventListener('click', (e) => {
     zIndex: -1
   })
   gsap.to('.middle-card', {
-    // width: 'calc(48vh)',
-    // height: 'calc(70vh)', 
     transform: "scale(1) translateX(-50%)",
     borderTop: "3.5px solid #BBC4CD",
     borderLeft: "3.5px solid #BBC4CD",
@@ -86,5 +92,3 @@ scrollToTop.addEventListener('click', (e) => {
   })
 })
 
-
-console.log(document.querySelector('.middle-card'))
