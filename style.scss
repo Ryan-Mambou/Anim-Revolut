@@ -22,7 +22,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
 }
@@ -63,6 +63,7 @@ nav{
             list-style: none;
             gap: 1rem;
             cursor: pointer;
+            font-weight: 500;
         }
     }
 
@@ -306,17 +307,39 @@ nav{
     }
 
     .secondary-one{
-        // left: -4%;
         transform: translateX(100%) scale(1.0);
         opacity: 0;
-        // z-index: 15;
     }
 
     .secondary-two{
         right: 0%;
         transform: translateX(-100%) scale(1.0);
-        // z-index: 15;
         opacity: 0;
+    }
+}
+
+#mobile-screen{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #mobile-screen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            color: black;
+        }
     }
 }
 
