@@ -37,11 +37,6 @@ body{
     height: calc(110vh);
     width: calc(200vh);
 
-    // img{
-    //     object-fit: cover;
-    //     width: calc(100vh);
-    //     height: calc(120vh);
-    // }
 }
 
 nav{
@@ -51,7 +46,6 @@ nav{
     align-items: center;
     margin: auto;
     width: clamp(60%, 1000px, 95%);
-    // width: 1000px;
 
 
     .first-nav-div{
@@ -160,11 +154,8 @@ nav{
 }
 
 .reveal {
-    // z-index: 50;
-    // background-color: green;
     margin: auto;
     z-index: -20;
-    // opacity: 0;
     width: 90vw;
     height: 100%;
     display: flex;
@@ -192,7 +183,6 @@ nav{
     transform: translateX(-50%);
     transition: all 0.5 linear;
     z-index: -20;
-    // transform: scale(0);
 
 }
 
@@ -251,7 +241,7 @@ nav{
         height: calc(70vh);
         bottom: 0px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: scale(1.0) translateX(-50%);
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
         overflow: hidden;
@@ -262,7 +252,7 @@ nav{
         border-right: 3.5px solid #BBC4CD;
         object-fit: cover;
         opacity: 1;
-        // transform: scale(1.0);
+        // transform: scale(0);
         // background-color: blue;
 
         .banner{
@@ -302,6 +292,7 @@ nav{
         object-fit: cover;
         position: absolute;
         bottom: 0px;
+        // inset: 0;
         // left: 50%;
         // transform: translateX(-50%);
 
@@ -314,17 +305,17 @@ nav{
     }
 
     .secondary-one{
-        left: -4%;
-        transform: translateX(0%) scale(1.0);
-        opacity: 0;
+        // left: -4%;
+        transform: translateX(10%) scale(1.0);
+        opacity: 1;
         z-index: 15;
     }
 
     .secondary-two{
-        right: -4%;
-        transform: translateX(0%);
+        right: 0%;
+        transform: translateX(-10%) scale(1.0);
         z-index: 15;
-        opacity: 0;
+        opacity: 1;
     }
 }
 

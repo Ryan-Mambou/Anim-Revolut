@@ -13,6 +13,10 @@ animate.addEventListener('click', (e) => {
     height: '100vh', 
     scale: 1, 
     borderRadius: '0px', zIndex: 5 })
+  gsap.to('.reveal-slider', {
+      transform: "translateY(-50px)",
+      zIndex: 10
+  })
   gsap.to('.middle-card', {
     transform: "scale(0.7) translateX(-72%)",
     borderRadius: '2.5rem',
@@ -29,18 +33,14 @@ animate.addEventListener('click', (e) => {
     opacity: 1,
     zIndex: 10
   })
-  gsap.to('.reveal-slider', {
-    transform: "translateY(-50px)",
-    zIndex: 10
-  })
   gsap.to('.secondary-one', {
     borderRadius: '1110px',
-    transform: "translateX(96%) scale(0.6)",
+    transform: "translateX(10%) scale(0.6)",
     opacity: 1
   })
   gsap.to('.secondary-two', {
     borderRadius: '1110px',
-    transform: "translateX(-96%) scale(0.6)",
+    transform: "translateX(-10%) scale(0.6)",
     opacity: 1
   })
 })
@@ -57,9 +57,10 @@ scrollToTop.addEventListener('click', (e) => {
     scale: 1, 
     borderTopRightRadius: "2rem",
     borderTopLeftRadius: "2rem",
-    zIndex: -20 })
+    zIndex: -20,
+    clearProps: 'all'
+  })
   gsap.to('.reveal', {
-    opacity: 0,
     zIndex: -1
   })
   gsap.to('.middle-card', {
@@ -67,13 +68,15 @@ scrollToTop.addEventListener('click', (e) => {
     borderTop: "3.5px solid #BBC4CD",
     borderLeft: "3.5px solid #BBC4CD",
     borderRight: "3.5px solid #BBC4CD",
-    borderRadius: '2.5rem',
+    borderTopLeftRadius: '2rem',
+    borderTopRightRadius: '2rem',
     zIndex: 5,
-    opacity: 1
+    opacity: 1,
+    clearProps: 'all'
   })
   gsap.to('.reveal-text', {
     transform: "translateY(0) scale(0.75)",
-    opacity: 1,
+    opacity: 0,
     zIndex: 10
   })
   gsap.to('.reveal-slider', {

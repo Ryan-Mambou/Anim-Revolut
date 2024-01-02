@@ -213,7 +213,7 @@ nav .second-nav-div a:last-child {
   height: 70vh;
   bottom: 0px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: scale(1) translateX(-50%);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   overflow: hidden;
@@ -265,14 +265,13 @@ nav .second-nav-div a:last-child {
   height: 100%;
 }
 .reveal-slider .secondary-one {
-  left: -4%;
-  transform: translateX(0%) scale(1);
-  opacity: 0;
+  transform: translateX(10%) scale(1);
+  opacity: 1;
   z-index: 15;
 }
 .reveal-slider .secondary-two {
-  right: -4%;
-  transform: translateX(0%);
+  right: 0%;
+  transform: translateX(-10%) scale(1);
   z-index: 15;
-  opacity: 0;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
